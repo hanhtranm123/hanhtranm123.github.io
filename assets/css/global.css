@@ -1,0 +1,487 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 400;
+    margin: 0;
+}
+
+.clearfix:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+
+.clearfix {
+    clear: both;
+    display: block;
+}
+
+#header {
+    background: #057743;
+    height: 77px;
+    position: fixed;
+    width: 100%;
+    top: 0px;
+}
+
+ul {
+    list-style: none;
+    padding: 0px;
+}
+
+#header .top-menu {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 13px;
+}
+
+#header .top-menu i {
+    color: white;
+}
+
+#header .top-menu .top-menu-center p {
+    font-size: 15px;
+    color: white;
+    margin: 0px;
+}
+
+#header .top-menu .top-menu-right span {
+    padding: 0px 10px;
+}
+
+#header .top-menu .top-menu-right {
+    float: right;
+}
+
+#header .mid-menu ul.list-menu {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+    height: 33px;
+    clear: both;
+}
+
+#header .mid-menu ul.list-menu li.item {
+    float: left;
+}
+
+#header .mid-menu ul.list-menu li.item-right {
+    float: right;
+    padding-right: 20px;
+}
+
+#header .mid-menu ul.list-menu li a {
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    display: inline-block;
+    padding: 5px 13px;
+}
+
+#header .mid-menu ul.list-menu li.active {
+    color: #057743;
+    background: white;
+}
+
+#header .mid-menu ul.list-menu li:hover a {
+    background: #046439;
+}
+
+#header .mid-menu ul.list-menu li a.active {
+    background: #f2f2f2;
+    color: #046439;
+}
+
+#header .mid-menu ul.list-menu li i.icon {
+    color: white;
+}
+
+.toolbar-right input {
+    border: 1px solid #ffffff;
+    width: 82px;
+    writing-mode: horizontal-tb !important;
+    text-rendering: auto !important;
+    color: -internal-light-dark(black, white);
+    letter-spacing: normal !important;
+    word-spacing: normal !important;
+    text-transform: none !important;
+    text-indent: 0px !important;
+    text-shadow: none !important;
+    display: inline-block !important;
+    text-align: start !important;
+    appearance: auto !important;
+    -webkit-rtl-ordering: logical !important;
+    cursor: text;
+    background-color: -internal-light-dark(rgb(255, 255, 255), rgb(59, 59, 59));
+    margin-top: 0px !important;
+    margin-right: -2px !important;
+    margin-bottom: 0px !important;
+    margin-left: -2px !important;
+    border-top-width: 1px !important;
+    border-right-width: 0px !important;
+    border-bottom-width: 1px !important;
+    border-left-width: 1px !important;
+    border-style: inset !important;
+    border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+    border-image: initial;
+    cursor: move;
+}
+
+/* input.b {
+    outline: 2px solid green;
+} */
+
+.content-top ul {
+    display: flex;
+    margin: 0px;
+    height: 25px;
+    height: 29px;
+}
+
+.content-top ul li {
+    width: 82px;
+    line-height: 26px;
+    text-align: center;
+    background: #ebebeb;
+    border-left: 1px solid rgb(156, 152, 152);
+}
+
+.content-top ul li:first-child {
+    width: 43px;
+    background: #ebebeb;
+}
+
+.content-top ul li:hover {
+    background: #06844b;
+}
+
+.toolbar-left {
+    float: left;
+
+}
+
+.toolbar-right {
+    margin-top: 259px;
+}
+
+.toolbar-left li {
+    width: 45px;
+    text-align: center;
+    height: 28px;
+    border: 1px solid rgb(156, 152, 152);
+    border-bottom: none;
+    background: #ebebeb;
+}
+
+.wp-sidebar {
+    display: flex;
+    min-height: 720px;
+}
+
+.sidebar-left {
+    width: 10%;
+    background: #046439;
+    color: white;
+    position: fixed;
+}
+
+.sidebar-left ul.list_user li {
+    height: 50px;
+    line-height: 50px;
+}
+
+.sidebar-left ul.list_user li i {
+    padding-left: 20px;
+}
+
+.sidebar-left ul.list_user li a {
+    text-decoration: none;
+    color: #ffffff;
+    width: 100%;
+    padding-left: 10px;
+}
+
+.sidebar-left ul.list_save li {
+    height: 50px;
+    line-height: 50px;
+    padding-left: 42px;
+}
+
+.bt {
+    border-top: 1px solid #ffffff;
+}
+
+.sidebar-left ul.list_save li a {
+    text-decoration: none;
+    color: #ffffff;
+    width: 100%;
+}
+
+.sidebar-left ul.list_option li {
+    height: 50px;
+    line-height: 50px;
+    padding-left: 42px;
+}
+
+.sidebar-left ul.list_option li a {
+    text-decoration: none;
+    color: #ffffff;
+    width: 100%;
+}
+
+.sidebar-left ul.list_user li.active {
+    background: #034d2b;
+}
+
+.sidebar-right h1 {
+    height: 50px;
+    background: #ffffff;
+    margin: 0px;
+    font-size: 18px;
+    line-height: 50px;
+    padding-left: 20px;
+    position: fixed;
+    width: 100%;
+}
+
+.sidebar-right h3 {
+    padding-left: 20px;
+    font-size: 20px;
+    text-transform: uppercase;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+
+
+.sidebar-right p {
+    padding-left: 22px;
+    margin-bottom: 10px;
+}
+
+.sidebar-right {
+    width: 90%;
+    background: #f3f3f3;
+    margin-left: 154px;
+
+}
+
+.toolbar-home {
+    height: 103px;
+    display: flex;
+    background: #f2f2f2;
+    border-bottom: 1px solid #c3c2c2;
+}
+
+.toolbar-left-fonts {
+    display: flex;
+}
+
+.paste {
+    padding: 13px;
+
+}
+
+.paste p {
+    margin: 0px;
+    font-size: 13px;
+}
+
+.paste i.icon {
+    color: #eeb543;
+    font-size: 30px;
+}
+
+.paste i.icon-drop {
+    padding-left: 10px;
+    font-size: 10px;
+}
+
+.drop {
+    width: 140px;
+    font-size: 14px;
+    border-right: 1px solid rgb(189, 185, 185);
+    margin-top: 5px;
+}
+
+.drop ul.list-drop {
+    padding: 5px 0px;
+    margin: 0px;
+
+}
+
+.drop ul.list-drop i.icon-cut {
+    color: rgb(0, 174, 255);
+}
+
+.drop ul.list-drop i.icon-copy {
+    color: rgb(218, 214, 214);
+}
+
+.drop ul.list-drop i.icon-format {
+    color: #eeb543;
+}
+
+.drop ul span {
+    font-size: 14px;
+}
+
+.wp-fonts {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5px;
+    width: 175px;
+    border-right: 1px solid rgb(189, 185, 185);
+    margin: 3px 0px;
+}
+
+.font-italic ul {
+    display: flex;
+    margin: 0px;
+    padding-top: 5px;
+    height: 45px;
+}
+
+.font-italic ul li a {
+    color: black;
+    padding: 0px 10px;
+}
+
+.font-italic ul .color {
+    padding: 0px 13px;
+}
+
+.font-italic ul .color i {
+    color: tomato;
+}
+
+
+.font-italic ul .color input {
+    width: 25px;
+    height: 13px;
+    border: none;
+    padding: 0px;
+    position: relative;
+    top: -13px;
+    right: 3px;
+}
+
+.font-italic ul .font input {
+    width: 25px;
+    height: 13px;
+    border: none;
+    padding: 0px;
+    position: relative;
+    top: -13px;
+    right: 4px;
+}
+
+.fx-input {
+    padding: 13px;
+    display: flex;
+    background: #f2f2f2;
+}
+
+.fx-input .select select {
+    width: 100px;
+    width: 108px;
+    outline: none;
+    border: 1px solid #cecece;
+}
+
+.handle {
+    width: 150px;
+    height: 21.2px;
+    background: #ffff;
+}
+
+.handle ul {
+    display: flex;
+    height: 22px;
+    border: 1px solid #cecece;
+    margin: 0px;
+
+}
+
+.handle ul li {
+    line-height: 21px;
+    padding: 0px 19px;
+}
+
+
+.handle ul li i.icon-close:hover {
+    color: red;
+}
+
+.handle ul li i.icon-tick:hover {
+    color: green;
+}
+
+.handle ul li a.fx i.icon-close {
+    color: tomato;
+}
+
+.sidebar-right .title {
+    display: flex;
+    justify-content: space-between;
+}
+
+.sidebar-right h3 {
+    font-size: 20px;
+}
+
+.sidebar-right .account {
+    margin-top: 12px;
+    z-index: 1000;
+    position: fixed;
+    margin-left: 1150px;
+}
+
+.history {
+    margin-top: 35px;
+}
+
+.history .title-info {
+    display: flex;
+}
+
+.history .title-info .name {
+    width: 70%;
+    padding-left: 30px;
+}
+
+.history .title-info .name i {
+    font-size: 16px;
+    padding-right: 10px;
+}
+
+
+.history .title-info span.date {
+    width: 30%;
+}
+
+.history ul.list-history {
+    margin-top: 30px;
+}
+
+.history ul.list-history li {
+    display: flex;
+    padding: 10px 0px;
+    border-top: 1px solid rgb(212, 207, 207);
+}
+
+.history ul.list-history li:hover {
+    background: rgb(218, 217, 217);
+}
+
+.history ul.list-history .name-file {
+    width: 70%;
+    padding-left: 15px;
+}
+
+.history ul.list-history span.date {
+    width: 30%;
+    padding-right: 10px;
+}
